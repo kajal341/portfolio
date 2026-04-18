@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    body{
+
+
+    background-image: url('https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg?semt=ais_incoming&w=740&q=80');
+   background-repeat: no-repeat;
+ background-size: cover;
+}
+    .top{
+        color: white;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 18px;
+          z-index: 1;
+        position: fixed;
+        margin-top: -70px;
+        margin-left: 470px;
+    }
+    .top-items:hover{
+        font-weight: bold;
+      
+    }
+    a{
+        color:white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+.image{
+    
+     margin-left: 20px;
+    margin-top: 70px;;
+    display:grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    
+}
+@media (max-width:300px){
+	.image{
+		
+		grid-template-columns: 1fr 1fr;
+	}
+}
+   
+
+.image-items{
+   
+    
+    color: white;
+   
+    
+}
+
+#web{
+    margin-left: 90px;
+    margin-top: 140px;
+    color:rgb(20, 20, 51);
+    font-size: 20px;
+    
+}
+#web:hover{
+    font-weight: bold;
+    color:white;
+}
+#cv{
+    border-radius: 5px;
+    color:white;
+    font-size: 10px;
+    background-color:rgb(20, 20, 51);
+}
+#cv:hover{
+    font-weight: bold;
+}
+.about{
+     height:200px;
+     
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    border-top:2px solid rgb(27, 27, 55);
+    
+    margin-top: 5px;
+}
+   
+
+.about-items{
+   width:70%;
+   margin-left: 20px;
+    
+}
+.about1{
+    color:white;
+   
+    margin-top: 10px;
+    font-size: 10px;;
+   
+   
+}
+
+#about-width{
+    height:50px;
+    margin-top: 1px;
+    display:none;
+}
+@media (max-width:300px){
+	.about{
+		
+		grid-template-columns: 1fr;
+	}
+}
+#girl{
+    margin-left: 90px;
+    width:160px;
+    height:180px;
+    border-radius: 10px;;
+    background-color: rgb(27, 27, 55);;
+    margin-top: 10px;
+}
+#read-more{
+    border-radius: 5px;
+    color:white;
+    font-size: 10px;
+    height:23px;
+    margin-top: 5px;
+    width:70px;
+  
+    background-color:rgb(27, 27, 55);
+}
+#read-more:hover{
+    font-weight: bold;
+}
+h5{
+    color:white;
+    text-align: center;
+    margin-top: 30px;
+    height20px;
+    
+    background-color: rgb(27, 27, 55);;
+}
+.service{
+     height:180px; 
+     
+    margin-top: 10px;;
+    display:grid;
+    
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.skills{
+   
+
+     
+    margin-top: 10px;;
+    display:grid;
+   
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.skills-items:hover{
+    font-weight: bold;
+    
+}
+.skills-items{
+
+   text-align: center; 
+   color:white;
+   margin-top: 10px;
+   font-size:15px;
+   margin-left: 20px;
+width:160px;
+   background-color: rgb(52, 52, 79);
+   border-radius: 10px;
+    border-bottom:2px solid rgb(27, 27, 55)  ;
+    border-top: 2px solid rgb(27, 27, 55);;
+}
+@media (max-width:300px){
+	.skills{
+		
+		grid-template-columns: 1fr 1fr;
+	}
+
+}
+
+.project{
+    
+  
+    margin-top: 10px;;
+    display:grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.project-items{
+    
+   text-align: center; 
+   color:white;
+   margin-top: 10px;
+   font-size: 14px;
+   margin-left: 10px;
+   width:240px;
+   background-color: rgb(52, 52, 79);
+   border-radius: 10px;
+    border-bottom:2px solid rgb(27, 27, 55)  ;
+    border-top: 2px solid rgb(27, 27, 55) ;;
+}
+.project-items:hover{
+    font-weight: bold;
+    
+}
+
+@media (max-width:300px){
+	.project{
+		
+		grid-template-columns: 1fr;
+	}
+}
+h4{
+    color: rgb(7, 7, 42);
+    text-align: center;
+    margin-top: 70px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(27, 27, 55);
+}
+.footer{
+     
+     
+    margin-top: 10px;;
+    display:grid;
+
+    grid-template-columns: 1fr 1fr;
+
+}
+.footer-items{
+    margin-top: 10px;
+   color:white;
+  
+   font-size: 14px;
+ margin-left: 50px;   
+}
+@media (max-width:300px){
+	.footer{
+		
+		grid-template-columns: 1fr;
+	}
+}
+#send-message{
+    border-radius: 5px;
+    color:white;
+    font-size: 10px;
+    height:30px;
+    margin-top: 5px;
+    width:100px;
+    margin-left: 20%;
+  font-size: 12px;
+    background-color:rgb(27, 27, 55);
+    
+}
+#send-message:hover{
+    font-weight: bold;
+}
+.message-form{
+    margin-top: 10px;
+    width:50%;
+    margin-left: 290px;
+   
+}
+.contact-form{
+    background-color: white;
+    text-align: center;
+    width:188px;
+    color:black;
+    font-weight: bold;
+     
+}
+.show-code{
+    border-radius: 5px;
+    color:white;
+    font-size: 10px;
+    height:23px;
+    margin-top: 5px;
+    width:70px;
+  
+    background-color:rgb(27, 27, 55);
+}
+.show-code:hover{
+    font-weight: bold;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="top"> 
+
+<div class="top-items">Home</div>
+<div class="top-items"><a href="#show-about">About</a></div>
+<div class="top-items"><a href="#skills">Skills</a></div>
+<div class="top-items"><a href="#project">project</a></div>
+<div class="top-items"><a href="#footer">Contact</a></div>
+    </div>
+
+   <div class="image">
+<div class="image-items">Hello, I am<br><b style="font-size: 20px;">Kajal Kumari</b><br>I am a passionate web developer skilled in creating responsive and user-friendly websites. I enjoy turning ideas into real digital experiences using modern web technologies<br><a href="https://wa.me/919891783044" target="_blank"><i class="fa-brands fa-whatsapp" style="color:rgb(9, 9, 62);"></i></a><i class="fa-brands fa-facebook" style="color:rgb(12, 12, 61);"></i><i class="fa-brands fa-linkedin" style="color:rgb(12, 12, 61);"></i><br></wa-icon><button id="cv" onclick="cv()">Download CV</button></div>
+<div class="image-items" id="web"><b>Web Developer</b></div>
+<div class="image-items" id="girl1"><img src="https://static.vecteezy.com/system/resources/thumbnails/050/817/792/small/happy-smiling-business-woman-in-suit-with-hand-pointing-at-empty-space-standing-isolate-on-transparent-background-png.png"height="250px"></div>
+
+
+
+   </div> 
+<div class="about" id="show-about">
+<div class="about-items" id="girl"><img src="https://static.vecteezy.com/system/resources/thumbnails/050/817/792/small/happy-smiling-business-woman-in-suit-with-hand-pointing-at-empty-space-standing-isolate-on-transparent-background-png.png"height="170px"></div>
+
+<div class="about-items">
+<div class="about1"><b>About Me</b><br>My name is Kajal Kumari. I completed my 10th and 12th from HBSE Board, with a specialization in Commerce stream, and pursued a Bachelor of Computer Applications (BCA). I have also completed a Web Development course from Maa Sharde Computer Institute.</div>
+ <div class="about1" id="about-width">I am passionate about learning new technologies and improving my web development skills.<br></div>
+<button id="read-more" onclick="read()">Read More</button>
+
+ </div> 
+
+</div>
+
+
+</div>
+<h5>My Skills</h5>
+<div class="skills" id="skills">
+    <div class="skills-items"><b>HTML</b><br>I create well-structured web pages using HTML. I focus on clean layout and proper elements for better readability.</div>
+     <div class="skills-items"><b>Casading Style Sheet</b><br>I design attractive and responsive websites using CSS. I ensure layouts look good on all devices.</div>
+   <div class="skills-items"><b>Javascript</b><br>I develop basic applications using Java. I focus on simple logic and clean code for proper functionality.</div>
+<div class="skills-items"><b>Bootstrap</b><br>I create responsive and mobile-friendly layouts using Bootstrap. I use its grid system to design clean and modern websites.</div>
+
+
+</div>
+
+<h5>My Project</h5>
+<div class="project" id="project">
+    <div class="project-items"><br><img src="Capture.PNG" height="100px" width="100px"><br><b style="color: rgb(17, 17, 60);">Metalmen </b><br>Focused on structured layout, easy navigation, and professional design.<br><button class="show-code"><a href="https://github.com/kajal341/Metalmen-portfolio">Show code</a></button></div>
+     <div class="project-items"><br><img src="restaurant.PNG" height="100px" width="100px"><br><b style="color: rgb(17, 17, 60);">Restaurant</b><br>Implemented features like menu display, contact form, and smooth navigation to improve usability and engagement.<br><button class="show-code"><a href="https://github.com/kajal341/Spice-hub-website">Show Code</a></button></div>
+   <div class="project-items"><br><img src="cardekho.PNG" height="100px" width="100px"><br><b style="color: rgb(17, 17, 60);">Car Selling</b><br>Developed a responsive car listing and comparison platform with a clean interface and smooth user experience.<br><button class="show-code"><a href="https://github.com/kajal341/basics_code">Show Code</a></button></div>
+
+
+</div>
+<!----footer-->
+ <h4>Contact Me</h4>
+<div class="footer" id="footer">
+   
+<div class="footer-items">👤Full Name - Kajal Kumari<br><br>📞 Conact No. 9891783044</div>
+<div class="footer-items">📧Email id - Kajal@341<br><br>📍Address - Sanjay Colony Sector. 23, Faridabad</div>
+ 
+<!-----form-->
+<div class="message-form">
+  <div class="contact-form" id="contact-form">Contact Form</div>
+    <div id="name-error"></div><input type="text" placeholder="Name" class="contact-form" id="contact-form1">
+    <div id="contact-error"></div><input type="text" placeholder="Conatct" class="contact-form" id="contact-form2">
+    <div id="email-error"></div><input type="text" placeholder="E-mail-id" class="contact-form" id="contact-form3">
+    <div id="address-error"></div><input type="text" placeholder="Address" class="contact-form" id="contact-form4">
+        
+    <button id="send-message" id="message" onclick="message()">Send Message</button>
+</div>
+</div>
+<script>
+
+    function read(){
+        document.getElementById("about-width").style.display="block";
+        
+    }
+
+    
+    function cv(){
+        alert("cv is not available yet");
+    }
+
+
+    function message(){
+    var name=document.getElementById("contact-form1").value;
+    
+    if(name==""){
+        document.getElementById("name-error").innerHTML="Enter your name";
+        document.getElementById("name-error").style.color="red";
+
+
+    }
+     var contact=document.getElementById("contact-form2").value;
+
+        if(contact==""){
+            document.getElementById("contact-error").innerHTML="Enter Your Contact";
+            document.getElementById("contact-error").style.color="red";
+    
+    }
+    var email=document.getElementById("contact-form3").value;
+    if (email==""){
+        document.getElementById("email-error").innerHTML="Enter Your Email";
+        document.getElementById("email-error").style.color="red";
+    }
+    var address=document.getElementById("contact-form4").value;
+    if (address==""){
+        document.getElementById("address-error").innerHTML="Enter Your Address";
+        document.getElementById("address-error").style.color="red";
+    }
+ }
+
+ 
+   </script>
+   <script> 
+
+
+
+ gsap.from(".skills-items",{
+        x: 600,  
+        duration:4,
+        
+       
+    });
+ gsap.from(".project-items",{
+        x: -700,
+        duration:4,
+       
+    });
+</script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
